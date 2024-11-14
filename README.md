@@ -37,7 +37,8 @@
 
 <br>
 <br>
-![PHASE 3](https://github.com/user-attachments/assets/f011e0ca-32a0-4904-9a75-b9c1ff3787c4)
+![PHASE 3](https://github.com/user-attachments/assets/edccec16-898e-46ff-b1e4-a72b0d0756c3)
+
 <br>
 <br>
 Together, these documents lay the foundation for a course management system that supports lecturers in administrative tasks and contributes to better educational outcomes.
