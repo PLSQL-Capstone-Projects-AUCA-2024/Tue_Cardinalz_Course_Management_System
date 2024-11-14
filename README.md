@@ -2,11 +2,11 @@
 
 ## The provided documents in the main branch outline the design and objectives of a course management system aimed at streamlining tasks for university lecturers, here are some insights of the whole progect:
 <br>
+
+
+
+**PHASE 2: Business Process Modeling focuses on defining and visualizing the workflow of the course management system. This phase includes:**
 <br>
-
-
-**Phase 2: Business Process Modeling focuses on defining and visualizing the workflow of the course management system. This phase includes:**
-
 
 ⚡Scope: Centralizing course management tasks like attendance, assignments, and grading.
 
@@ -22,7 +22,7 @@
 
 
 
-**Phase 3: Logical Model Design provides a structured database schema for the system. Key components include:**
+**PHASE 3: Logical Model Design provides a structured database schema for the system. Key components include:**
 <br>
 
 
