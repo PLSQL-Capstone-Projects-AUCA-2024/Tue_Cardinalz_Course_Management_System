@@ -1,9 +1,11 @@
 # Course_Management_System OVERVIEW
 
 ## The provided documents in the main branch outline the design and objectives of a course management system aimed at streamlining tasks for university lecturers, here are some insights of the whole progect:
+<br>
+<br>
 
 
-* **Phase 2: Business Process Modeling focuses on defining and visualizing the workflow of the course management system. This phase includes:**
+**Phase 2: Business Process Modeling focuses on defining and visualizing the workflow of the course management system. This phase includes:**
 
 
 ⚡Scope: Centralizing course management tasks like attendance, assignments, and grading.
@@ -12,10 +14,12 @@
 
 😈Entities: Lecturer, Course, Class, Student, Assignment, Grade, and Department, each playing a specific role in the workflow.
 
-😎Significance in MIS: The system supports decision-making by giving lecturers insights into student performance, enhancing efficiency in course administration​(Phase 2).
+😎Significance in MIS: The system supports decision-making by giving lecturers insights into student performance, enhancing efficiency in course administration​(Phase 2).<br>
 
 
-* **Phase 3: Logical Model Design provides a structured database schema for the system. Key components include:**<br>
+**Phase 3: Logical Model Design provides a structured database schema for the system. Key components include:**
+<br>
+<br>
 
 
 👌Entities: Department, Lecturer, Course, Student, Assignment, Submission, Grade, and Attendance.
