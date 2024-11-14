@@ -19,7 +19,9 @@
 <br>
 <br>
 
-
+![pl 2](https://github.com/user-attachments/assets/34321cd5-4308-4c0d-970c-6da673fc573f)
+<br>
+<br>
 
 
 **PHASE 3: ⚙️Logical Model Design provides a structured database schema for the system. Key components include:**
@@ -33,4 +35,9 @@
 
 😵Goals: Create an organized structure to support accurate and accessible data, enabling effective tracking of student progress and lecturer workload management​(Phase 3).
 
+<br>
+<br>
+![PHASE 3](https://github.com/user-attachments/assets/f011e0ca-32a0-4904-9a75-b9c1ff3787c4)
+<br>
+<br>
 Together, these documents lay the foundation for a course management system that supports lecturers in administrative tasks and contributes to better educational outcomes.
