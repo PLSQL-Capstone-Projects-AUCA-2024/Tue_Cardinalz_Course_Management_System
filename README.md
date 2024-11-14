@@ -1,6 +1,6 @@
 # Course_Management_System OVERVIEW
 
-## The provided documents outline the design and objectives of a course management system aimed at streamlining tasks for university lecturers:
+## The provided documents in the main branch outline the design and objectives of a course management system aimed at streamlining tasks for university lecturers, here are some insights of the whole progect:
 
 
 **Phase 2: Business Process Modeling focuses on defining and visualizing the workflow of the course management system. This phase includes:**
