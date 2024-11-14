@@ -6,7 +6,7 @@
 
 
 
-**PHASE 2: 💼Business Process Modeling focuses on defining and visualizing the workflow of the course management system. This phase includes:**
+## PHASE 2: 💼Business Process Modeling focuses on defining and visualizing the workflow of the course management system. This phase includes:
 <br>
 
 ⚡Scope: Centralizing course management tasks like attendance, assignments, and grading.
@@ -26,7 +26,7 @@
 <br>
 
 
-**PHASE 3: ⚙️Logical Model Design provides a structured database schema for the system. Key components include:**
+## PHASE 3: ⚙️Logical Model Design provides a structured database schema for the system. Key components include:
 <br>
 <br>
 
