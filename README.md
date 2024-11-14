@@ -1,6 +1,7 @@
 # Course_Management_System OVERVIEW
 
-## The provided documents in the main branch outline the design and objectives of a course management system aimed at streamlining tasks for university lecturers, here are some insights of the whole progect:
+## The provided documents in the main branch outline the design and objectives of a course management system aimed at streamlining tasks for university lecturers.
+## Here are some insights of the whole progect:
 <br>
 
 
@@ -19,7 +20,8 @@
 <br>
 <br>
 
-![pl 2](https://github.com/user-attachments/assets/34321cd5-4308-4c0d-970c-6da673fc573f)
+![pl](https://github.com/user-attachments/assets/4d5217ea-19ca-4363-9d76-fe8aaf20d969)
+
 <br>
 <br>
 
@@ -35,10 +37,12 @@
 
 😵Goals: Create an organized structure to support accurate and accessible data, enabling effective tracking of student progress and lecturer workload management​(Phase 3).
 
-<br>
-<br>
-![PHASE 3](https://github.com/user-attachments/assets/edccec16-898e-46ff-b1e4-a72b0d0756c3)
 
-<br>
-<br>
+
+
+
+
+![PHASE 3](https://github.com/user-attachments/assets/d4a0e6e2-5de5-407f-b485-34e5f9375a91)
+
+
 Together, these documents lay the foundation for a course management system that supports lecturers in administrative tasks and contributes to better educational outcomes.
