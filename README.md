@@ -24,6 +24,7 @@
 
 **PHASE 3: Logical Model Design provides a structured database schema for the system. Key components include:**
 <br>
+<br>
 
 
 👌Entities: Department, Lecturer, Course, Student, Assignment, Submission, Grade, and Attendance.
