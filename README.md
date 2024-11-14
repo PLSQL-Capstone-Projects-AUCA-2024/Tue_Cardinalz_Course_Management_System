@@ -17,10 +17,12 @@
 😎Significance in MIS: The system supports decision-making by giving lecturers insights into student performance, enhancing efficiency in course administration​(Phase 2).
 <br>
 <br>
+<br>
+
+
 
 
 **Phase 3: Logical Model Design provides a structured database schema for the system. Key components include:**
-<br>
 <br>
 
 
