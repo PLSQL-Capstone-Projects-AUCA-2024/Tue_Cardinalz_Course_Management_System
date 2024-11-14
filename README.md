@@ -14,7 +14,9 @@
 
 😈Entities: Lecturer, Course, Class, Student, Assignment, Grade, and Department, each playing a specific role in the workflow.
 
-😎Significance in MIS: The system supports decision-making by giving lecturers insights into student performance, enhancing efficiency in course administration​(Phase 2).<br>
+😎Significance in MIS: The system supports decision-making by giving lecturers insights into student performance, enhancing efficiency in course administration​(Phase 2).
+<br>
+<br>
 
 
 **Phase 3: Logical Model Design provides a structured database schema for the system. Key components include:**
