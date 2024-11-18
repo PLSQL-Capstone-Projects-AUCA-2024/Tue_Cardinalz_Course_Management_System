@@ -1,4 +1,5 @@
 # Course_Management_System OVERVIEW
+![Screenshot 2024-11-18 092008](https://github.com/user-attachments/assets/fd36f1de-f770-4d2f-9941-85edd1985a70)
 
 ## The provided documents in the main branch outline the design and objectives of a course management system aimed at streamlining tasks for university lecturers.
 ## Here are some insights of the whole progect:
