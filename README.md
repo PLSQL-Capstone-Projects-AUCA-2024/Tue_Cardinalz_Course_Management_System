@@ -13,8 +13,9 @@
 9.	  ISHEMA NGABO Ange			        26035
 
 
-## The provided documents in the main branch outline the design and objectives of a course management system aimed at streamlining tasks for university lecturers.
-## 📝Here are some insights of the whole project:
+## The provided documents in the main branch (Phase 2 and 3) outline the design and objectives of a course management system aimed at streamlining tasks for university lecturers.
+📝Here are some insights of the whole project:
+<br>
 <br>
 
 
@@ -267,6 +268,9 @@ WHERE Course_ID = 1;
 COMMIT;
 
 ```
+<br>
+<br>
+
 # THIS MARK THE CONCLUSION OF OUR PROJECT 
 
 # _**CREDITS**_ :
@@ -274,15 +278,15 @@ COMMIT;
 _credit of this project goes to every member of the group that worked relentlessly and hard for this to happen :_
 
 <pre>
-1.	  MUGISHA Julien ==>   lecturer Table creation + Repo creation
-2.	  IRADUKUNDA Delphine ==>   Course Table Creation + repo creation
-3.	  SHEJA N M Yves ==>   Database Creation + transaction creation
-4.	  ISHIMWE Mireille ==>   Department Table Creation + View creation
-5.	  INEZA HABAMENSHI Darryl ==>   submission Table Creation + View creation
-6.	  UWAYO Olga ==>   Attendance Table Creation + View creation
-7.	  KAMALI MUSASIRA Philbert ==>   grade Table Creation + transaction creation
-8.	  IRAKOZE Arlaine Peace	==>   Assignment Table Creation + repo creation
-9.	  ISHEMA NGABO Ange ==>   Students Table Creation + View creation
+1.	  MUGISHA Julien ==>  Business process modeling + lecturer Table creation + Read creation
+2.	  IRADUKUNDA Delphine ==>  Business Process modeling + Course Table Creation + repo creation
+3.	  SHEJA N M Yves ==>  Logical Modeling + Database Creation + transaction creation
+4.	  ISHIMWE Mireille ==>   Business Process modeling + Department Table Creation + View creation
+5.	  INEZA HABAMENSHI Darryl ==>  Logical Modeling + submission Table Creation + View creation
+6.	  UWAYO Olga ==>   Business Process modeling + Attendance Table Creation + View creation
+7.	  KAMALI MUSASIRA Philbert ==>  Logical Modeling + grade Table Creation + transaction creation
+8.	  IRAKOZE Arlaine Peace	==>   Logical Modeling + Assignment Table Creation + repo creation
+9.	  ISHEMA NGABO Ange ==>   Business Process modeling + Students Table Creation + View creation
 </pre>
 
 
