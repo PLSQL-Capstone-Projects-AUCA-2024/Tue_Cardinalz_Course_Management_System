@@ -1,0 +1,22 @@
+
+JOINS AND VIEWS: 
+===============
+CREATE VIEW StudentMarks AS
+SELECT 
+    s.Student_ID,
+    s.Name AS Student_Name,
+    d.Name AS Department_Name,
+    a.Description AS Assignment_Description,
+    su.File_Link AS Submission_Link,
+    su.Submission_Date,
+    g.Grade_Value
+FROM 
+    STUDENT s
+JOIN 
+    DEPARTMENT d ON s.Department_ID = d.Department_ID
+LEFT JOIN 
+    GRADE g ON s.Student_ID = g.Student_ID
+LEFT JOIN 
+    ASSIGNMENT a ON g.Assignment_ID = a.Assignment_ID
+LEFT JOIN 
+    SUBMISSION su ON su.Assignment_ID = a.Assignment_ID AND su.Student_ID = s.Student_ID;
