@@ -51,10 +51,15 @@
 😵 _**Goals**_ : Create an organized structure to support accurate and accessible data, enabling effective tracking of student progress and lecturer workload management​(reference to Phase 3.docx).
 
 
-
-![PHSE 3](https://github.com/user-attachments/assets/d4a0e6e2-5de5-407f-b485-34e5f9375a91)
-
+![alt text](logica.jpg)
 
 Together, these documents lay the foundation for a course management system that supports lecturers in administrative tasks and contributes to better educational outcomes.
 
-# PHASE 4: 
+# PHASE 4: 📡 _CREATING DATABASE AND ORACLE ENTERPRISE MANAGER._
+
+## CREATION OF A PLUGGABLE DATABASE:
+ We have to create a pluggable database for our project and we name it " _**TUE_CARDINALS_COURSEMANAGEMENTSYSTEM**_ ". We created it using the following codes
+
+ ```sql
+
+
