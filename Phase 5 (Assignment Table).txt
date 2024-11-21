@@ -1,0 +1,44 @@
+-- Table assignment
+CREATE TABLE ASSIGNMENT (
+Assignment_ID INT PRIMARY KEY,
+Course_ID INT NOT NULL,
+Description VARCHAR(200),
+Due_Date DATE NOT NULL,
+Submission_Link VARCHAR(255),
+FOREIGN KEY (Course_ID) REFERENCES COURSE(Course_ID)
+);
+
+===============================================================
+
+-- insert values into assignment table
+ 
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (1, 1, 'Write a Python program to calculate factorial.',TO_DATE('2024-12-01','YYYY-MM-DD'), 'http://university.edu/submissions/assignment1');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (2, 2, 'Implement a linked list in C++.', TO_DATE('2024-12-05','YYYY-MM-DD'), 'http://university.edu/submissions/assignment2');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (3, 3, 'Develop a simple website with HTML and CSS.', TO_DATE('2024-12-10','YYYY-MM-DD'), 'http://university.edu/submissions/assignment3');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (4, 4, 'Design an ER diagram for a library management system.', TO_DATE('2024-12-15','YYYY-MM-DD'), 'http://university.edu/submissions/assignment4');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (5, 5, 'Analyze the time complexity of sorting algorithms.', TO_DATE('2024-12-20','YYYY-MM-DD'), 'http://university.edu/submissions/assignment5');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (6, 6, 'Create a software requirements specification document.', TO_DATE('2024-12-25','YYYY-MM-DD'), 'http://university.edu/submissions/assignment6');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (7, 7, 'Solve 10 problems from Chapter 3 of the Calculus textbook.', TO_DATE('2024-12-02','YYYY-MM-DD'), 'http://university.edu/submissions/assignment7');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (8, 8, 'Prove properties of matrix determinants.', TO_DATE('2024-12-07','YYYY-MM-DD'), 'http://university.edu/submissions/assignment8');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (9, 9, 'Derive the probability distribution of a coin toss.', TO_DATE('2024-12-12','YYYY-MM-DD'), 'http://university.edu/submissions/assignment9');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (10, 10, 'Write a program to solve linear equations numerically.', TO_DATE('2024-12-17','YYYY-MM-DD'), 'http://university.edu/submissions/assignment10');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (11, 11, 'Solve exercises from Chapter 5 on group theory.', TO_DATE('2024-12-22','YYYY-MM-DD'), 'http://university.edu/submissions/assignment11');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (12, 12, 'Analyze convergence of a given series.', TO_DATE('2024-12-27','YYYY-MM-DD'), 'http://university.edu/submissions/assignment12');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (13, 13, 'Derive equations of motion for a pendulum.', TO_DATE('2024-12-03','YYYY-MM-DD'), 'http://university.edu/submissions/assignment13');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (14, 14, 'Explain the laws of thermodynamics with examples.', TO_DATE('2024-12-08','YYYY-MM-DD'), 'http://university.edu/submissions/assignment14');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (15, 15, 'Solve Schrodinger’s equation for a particle in a box.', TO_DATE('2024-12-13','YYYY-MM-DD'), 'http://university.edu/submissions/assignment15');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (16, 16, 'Design a circuit to measure magnetic field.', TO_DATE('2024-12-18','YYYY-MM-DD'), 'http://university.edu/submissions/assignment16');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (17, 17, 'Research report on the lifecycle of stars.', TO_DATE('2024-12-23','YYYY-MM-DD'), 'http://university.edu/submissions/assignment17');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (18, 18, 'Experiment to calculate focal length of lenses.', TO_DATE('2024-12-28','YYYY-MM-DD'), 'http://university.edu/submissions/assignment18');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (19, 19, 'Write a report on the structure of animal cells.', TO_DATE('2024-12-04','YYYY-MM-DD'), 'http://university.edu/submissions/assignment19');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (20, 20, 'Analyze a family tree for genetic traits.', TO_DATE('2024-12-09','YYYY-MM-DD'), 'http://university.edu/submissions/assignment20');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (21, 21, 'Study the growth of bacteria in different media.', TO_DATE('2024-12-14','YYYY-MM-DD'), 'http://university.edu/submissions/assignment21');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (22, 22, 'Prepare a presentation on human immune responses.', TO_DATE('2024-12-19','YYYY-MM-DD'), 'http://university.edu/submissions/assignment22');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (23, 23, 'Survey on ecosystems in a local park.', TO_DATE('2024-12-24','YYYY-MM-DD'), 'http://university.edu/submissions/assignment23');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (24, 24, 'Essay on Darwin’s theory of evolution.', TO_DATE('2024-12-29','YYYY-MM-DD'), 'http://university.edu/submissions/assignment24');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (25, 25, 'Calculate molar mass of common compounds.', TO_DATE('2024-12-06','YYYY-MM-DD'), 'http://university.edu/submissions/assignment25');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (26, 26, 'Synthesize an organic compound and record observations.', TO_DATE('2024-12-11','YYYY-MM-DD'), 'http://university.edu/submissions/assignment26');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (27, 27, 'Perform a titration experiment to find pH.', TO_DATE('2024-12-16','YYYY-MM-DD'), 'http://university.edu/submissions/assignment27');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (28, 28, 'Explain Gibbs free energy and its applications.', TO_DATE('2024-12-21','YYYY-MM-DD'), 'http://university.edu/submissions/assignment28');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (29, 29, 'Identify biomolecules from food samples.', TO_DATE('2024-12-26','YYYY-MM-DD'), 'http://university.edu/submissions/assignment29');
+INSERT INTO ASSIGNMENT (Assignment_ID, Course_ID, Description, Due_Date, Submission_Link) VALUES (30, 30, 'Write a report on crystal structures of salts.', TO_DATE('2024-12-31','YYYY-MM-DD'), 'http://university.edu/submissions/assignment30');
