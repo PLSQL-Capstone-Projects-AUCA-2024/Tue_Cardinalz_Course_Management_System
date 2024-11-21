@@ -264,6 +264,7 @@ COMMIT;
 
 _credit of this project goes to every member of the group that worked relentlessly and hard for this to happen :_
 
+<pre>
 1.	  MUGISHA Julien			            lecturer Table creation + Repo creation
 2.	  IRADUKUNDA Delphine 			      Course Table Creation + repo creation
 3.	  SHEJA N M Yves				           Database Creation + transaction creation
@@ -273,8 +274,7 @@ _credit of this project goes to every member of the group that worked relentless
 7.	  KAMALI MUSASIRA Philbert		   grade Table Creation + transaction creation
 8.	  IRAKOZE Arlaine Peace			     Assignment Table Creation + repo creation
 9.	  ISHEMA NGABO Ange			         Students Table Creation + View creation
-
-
+</pre>
 
 
 
