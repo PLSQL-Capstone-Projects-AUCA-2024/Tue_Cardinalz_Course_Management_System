@@ -265,15 +265,15 @@ COMMIT;
 _credit of this project goes to every member of the group that worked relentlessly and hard for this to happen :_
 
 <pre>
-1.	  MUGISHA Julien			            lecturer Table creation + Repo creation
-2.	  IRADUKUNDA Delphine 			      Course Table Creation + repo creation
-3.	  SHEJA N M Yves				           Database Creation + transaction creation
-4.	  ISHIMWE Mireille 			         Department Table Creation + View creation
-5.	  INEZA HABAMENSHI Darryl		    submission Table Creation + View creation
-6.	  UWAYO Olga 				              Attendance Table Creation + View creation
-7.	  KAMALI MUSASIRA Philbert		   grade Table Creation + transaction creation
-8.	  IRAKOZE Arlaine Peace			     Assignment Table Creation + repo creation
-9.	  ISHEMA NGABO Ange			         Students Table Creation + View creation
+1.	  MUGISHA Julien lecturer Table creation + Repo creation
+2.	  IRADUKUNDA Delphine Course Table Creation + repo creation
+3.	  SHEJA N M Yves Database Creation + transaction creation
+4.	  ISHIMWE Mireille Department Table Creation + View creation
+5.	  INEZA HABAMENSHI Darryl submission Table Creation + View creation
+6.	  UWAYO Olga Attendance Table Creation + View creation
+7.	  KAMALI MUSASIRA Philbert grade Table Creation + transaction creation
+8.	  IRAKOZE Arlaine Peace	 Assignment Table Creation + repo creation
+9.	  ISHEMA NGABO Ange Students Table Creation + View creation
 </pre>
 
 
