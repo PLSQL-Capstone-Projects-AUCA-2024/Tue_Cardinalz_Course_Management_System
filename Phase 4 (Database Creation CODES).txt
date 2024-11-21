@@ -1,0 +1,24 @@
+
+Create PDB
+==============
+
+-- Step 1: Create the Pluggable Database (PDB)
+
+CREATE PLUGGABLE DATABASE tue_cardinals_CourseManagementSystem
+ADMIN USER tue_cardinals IDENTIFIED BY cardinals
+ROLES = (DBA)
+FILE_NAME_CONVERT = ('C:\app\CIOOL\product\21c\oradata\XE\pdbseed',
+'C:\app\CIOOL\product\21c\oradata\XE\tue_cardinals_CourseManagementSystem/'); 
+
+
+-- Step 2: Open the Pluggable Database
+
+ALTER PLUGGABLE DATABASE tue_cardinals_CourseManagementSystem OPEN; 
+
+======================
+
+after the configuration in net conf assist:
+
+connect tue_cardinals/cardinals@localhost:1522/tue_cardinals_CourseManagementSystem;
+			==OR==
+connect tue_cardinals/cardinals@CMS;
