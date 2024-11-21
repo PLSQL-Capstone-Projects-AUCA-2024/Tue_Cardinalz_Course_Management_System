@@ -28,7 +28,7 @@
 
 😈 _**Entities**_ : Lecturer, Course, Class, Student, Assignment, Grade, and Department, each playing a specific role in the workflow.
 
-😎 _**Significance in MIS**_ : The system supports decision-making by giving lecturers insights into student performance, enhancing efficiency in course administration​(refernce to Phase 2.doc).
+😎 _**Significance in MIS**_ : The system supports decision-making by giving lecturers insights into student performance, enhancing efficiency in course administration​(refernce to Phase 2.docx ).
 <br>
 <br>
 <br>
@@ -44,18 +44,17 @@
 <br>
 
 
-👌Entities: Department, Lecturer, Course, Student, Assignment, Submission, Grade, and Attendance.
+👌 _**Entities**_ : Department, Lecturer, Course, Student, Assignment, Submission, Grade, and Attendance.
 
-😒Relationships: Defined using primary and foreign keys, the model connects students, lecturers, and courses to facilitate assignment submissions, grading, and attendance tracking.
+😒 _**Relationships**_ : Defined using primary and foreign keys, the model connects students, lecturers, and courses to facilitate assignment submissions, grading, and attendance tracking.
 
-😵Goals: Create an organized structure to support accurate and accessible data, enabling effective tracking of student progress and lecturer workload management​(Phase 3).
-
-
+😵 _**Goals**_ : Create an organized structure to support accurate and accessible data, enabling effective tracking of student progress and lecturer workload management​(reference to Phase 3.docx).
 
 
 
-
-![PHASE 3](https://github.com/user-attachments/assets/d4a0e6e2-5de5-407f-b485-34e5f9375a91)
+![PHSE 3](https://github.com/user-attachments/assets/d4a0e6e2-5de5-407f-b485-34e5f9375a91)
 
 
 Together, these documents lay the foundation for a course management system that supports lecturers in administrative tasks and contributes to better educational outcomes.
+
+# PHASE 4: 
