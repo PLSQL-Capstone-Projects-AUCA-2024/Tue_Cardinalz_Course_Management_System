@@ -1,0 +1,25 @@
+-- Table lecturer
+CREATE TABLE LECTURER (
+Lecturer_ID INT PRIMARY KEY,
+Name VARCHAR(100) NOT NULL,
+Contact_Details VARCHAR(255) NOT NULL,
+Department_ID INT NOT NULL,
+FOREIGN KEY (Department_ID) REFERENCES DEPARTMENT(Department_ID)
+);
+===========================================================
+into lecturer
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (1, 'Sir. Alice Smith', 'alice.smith@university.edu', 1);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (2, 'Dr. Bob Johnson', 'bob.johnson@university.edu', 1);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (3, 'Dr. Carol Lee', 'carol.lee@university.edu', 1);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (4, 'Dr. David Brown', 'david.brown@university.edu', 2);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (5, 'Dr. Eva Adams', 'eva.adams@university.edu', 2);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (6, 'Mr. Frank White', 'frank.white@university.edu', 2);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (7, 'Dr. Grace Green', 'grace.green@university.edu', 3);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (8, 'Dr. Henry Black', 'henry.black@university.edu', 3);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (9, 'Dr. Isla Gray', 'isla.gray@university.edu', 3);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (10, 'Dr. Jack Hall', 'jack.hall@university.edu', 4);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (11, 'Dr. Kelly King', 'kelly.king@university.edu', 4);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (12, 'Dr. Liam Scott', 'liam.scott@university.edu', 4);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (13, 'Ms. Mia Clark', 'mia.clark@university.edu', 5);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (14, 'Dr. Noah Wright', 'noah.wright@university.edu', 5);
+INSERT INTO LECTURER (Lecturer_ID, Name, Contact_Details, Department_ID) VALUES (15, 'Ms. Olivia Young', 'olivia.young@university.edu', 5);
