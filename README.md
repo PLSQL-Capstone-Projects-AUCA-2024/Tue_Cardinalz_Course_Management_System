@@ -196,5 +196,85 @@ For the purpose of keeping the readme short, we chose to use few example to demo
 ### 2. insertion for Course Table
 ![alt text](Phase%205%20(Course%20table%20SCREENSHOT).jpeg)
 
-_**REMARK**_ : _PLEASE CHECK THE REST OF SCREENSHOT AT YOUR CONVINIENT TIME_
+_**REMARK**_ : _Please check the  files provided in the repo  for the rest of screenshots_
+
+# PHASE 6:  📓 _DATABASE INTERACTIONS AND TRANSACTION_
+
+## DATABASE OPERATIONS
+
+They are many DML and DDL operations that can be than but we focus on mostly the "JOIN".
+
+We thought and got an idea of how to make a good use of joins outside the scope the other group would use and we thought we could use views and there are the code for views:
+
+```sql
+CREATE VIEW StudentMarks AS
+SELECT 
+    s.Student_ID,
+    s.Name AS Student_Name,
+    d.Name AS Department_Name,
+    a.Description AS Assignment_Description,
+    su.File_Link AS Submission_Link,
+    su.Submission_Date,
+    g.Grade_Value
+FROM 
+    STUDENT s
+JOIN 
+    DEPARTMENT d ON s.Department_ID = d.Department_ID
+LEFT JOIN 
+    GRADE g ON s.Student_ID = g.Student_ID
+LEFT JOIN 
+    ASSIGNMENT a ON g.Assignment_ID = a.Assignment_ID
+LEFT JOIN 
+    SUBMISSION su ON su.Assignment_ID = a.Assignment_ID AND su.Student_ID = s.Student_ID;
+```
+
+this views will be called and it will bring the student id selected, their name, department they belong to,the assignment did and their grades.
+
+calling the views:
+
+``` sql
+SELECT * FROM StudentMarks WHERE STUDENT_ID = 1; -- for example
+
+```
+
+##  Transaction Management:
+
+Firstly, we will give a short explanation of what a transaction is :
+
+a transaction is a sequence of operations performed as a single logical unit of work, ensuring data consistency and reliability.
+
+so we chose a simple transaction and here is the following:
+
+ ``` sql
+BEGIN TRANSACTION;
+
+INSERT INTO ATTENDANCE (Attendance_ID, Course_ID, Student_ID, Status)
+VALUES (26, 1, 40, 'Present');
+
+UPDATE COURSE
+SET Seats_Available = Seats_Available - 1
+WHERE Course_ID = 1;
+
+COMMIT;
+
+```
+# THIS MARK THE CONCLUSION OF OUR PROJECT 
+
+# _**CREDITS**_ :
+
+_credit of this project goes to every member of the group that worked relentlessly and hard for this to happen :_
+
+1.	  MUGISHA Julien			            lecturer Table creation + Repo creation
+2.	  IRADUKUNDA Delphine 			      Course Table Creation + repo creation
+3.	  SHEJA N M Yves				           Database Creation + transaction creation
+4.	  ISHIMWE Mireille 			         Department Table Creation + View creation
+5.	  INEZA HABAMENSHI Darryl		    submission Table Creation + View creation
+6.	  UWAYO Olga 				              Attendance Table Creation + View creation
+7.	  KAMALI MUSASIRA Philbert		   grade Table Creation + transaction creation
+8.	  IRAKOZE Arlaine Peace			     Assignment Table Creation + repo creation
+9.	  ISHEMA NGABO Ange			         Students Table Creation + View creation
+
+
+
+
 
