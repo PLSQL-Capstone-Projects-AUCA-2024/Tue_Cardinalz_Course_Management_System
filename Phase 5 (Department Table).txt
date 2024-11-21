@@ -1,0 +1,17 @@
+
+-- Table department
+CREATE TABLE DEPARTMENT (
+Department_ID INT PRIMARY KEY,
+Name VARCHAR(100) NOT NULL,
+Contact_Details VARCHAR(255) NOT NULL
+);
+
+======================================================================
+
+
+-- values into Deparment table
+INSERT INTO DEPARTMENT (Department_ID, Name, Contact_Details) VALUES (1, 'Computer Science', 'cs@university.edu');
+INSERT INTO DEPARTMENT (Department_ID, Name, Contact_Details) VALUES (2, 'Mathematics', 'math@university.edu');
+INSERT INTO DEPARTMENT (Department_ID, Name, Contact_Details) VALUES (3, 'Physics', 'physics@university.edu');
+INSERT INTO DEPARTMENT (Department_ID, Name, Contact_Details) VALUES (4, 'Biology', 'biology@university.edu');
+INSERT INTO DEPARTMENT (Department_ID, Name, Contact_Details) VALUES (5, 'Chemistry', 'chemistry@university.edu');
