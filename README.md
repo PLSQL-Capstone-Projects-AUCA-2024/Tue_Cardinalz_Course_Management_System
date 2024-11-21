@@ -14,7 +14,7 @@
 
 
 ## The provided documents in the main branch outline the design and objectives of a course management system aimed at streamlining tasks for university lecturers.
-## Here are some insights of the whole progect:
+## 📝Here are some insights of the whole project:
 <br>
 
 
@@ -24,7 +24,7 @@
 
 ⚡ _**Scope**_ : Centralizing course management tasks like attendance, assignments, and grading.
 
-😊 _**Objectives**_ : Automate attendance tracking, simplify grading, and offer real-time performance data.
+🎯 _**Objectives**_ : Automate attendance tracking, simplify grading, and offer real-time performance data.
 
 😈 _**Entities**_ : Lecturer, Course, Class, Student, Assignment, Grade, and Department, each playing a specific role in the workflow.
 
