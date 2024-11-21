@@ -50,10 +50,13 @@
 
 🎊 _**Goals**_ : Create an organized structure to support accurate and accessible data, enabling effective tracking of student progress and lecturer workload management​(reference to Phase 3.docx).
 
+![Phase 3 (Logical model structure)](https://github.com/user-attachments/assets/62ccfcbe-81b3-4c63-a719-22a532f49ad1)
 
-![alt text](logica.jpg)
 
 Together, these documents lay the foundation for a course management system that supports lecturers in administrative tasks and contributes to better educational outcomes.
+
+<br>
+<br>
 
 # PHASE 4: 📡 _CREATING DATABASE AND ORACLE ENTERPRISE MANAGER._
 
@@ -91,6 +94,9 @@ It should give you, a homepage like this:
 ![alt text](Phase%204%20(Oracle%20Enterprise%20HomePage%20SCREENSHOT)%20.PNG)
 
 _For any futher information please go check on the Oracle enterprise tablespace screenshot and Oracle enterprise login screenshot._
+
+<br>
+<br>
 
 # PHASE 5: 📝 _TABLE IMPLEMENTATION AND DATA INSERTION._
 
@@ -197,6 +203,9 @@ For the purpose of keeping the readme short, we chose to use few example to demo
 ![alt text](Phase%205%20(Course%20table%20SCREENSHOT).jpeg)
 
 _**REMARK**_ : _Please check the  files provided in the repo  for the rest of screenshots_
+
+<br>
+<br>
 
 # PHASE 6:  📓 _DATABASE INTERACTIONS AND TRANSACTION_
 
