@@ -1,0 +1,40 @@
+
+-- Table grade
+CREATE TABLE GRADE (
+GRADE_ID INT PRIMARY KEY,
+Student_ID INT NOTNULL,
+Assignment_ID INT NOT NULL,
+Grade_Value INT NOT NULL,
+FOREIGN KEY (Student_ID) REFERENCES STUDENT(Student_ID),
+FOREIGN KEY (Assignment_ID) REFERENCES ASSIGNMENT(Assignment_ID)
+);
+
+===================================================================
+
+-- insert values into GRADE table
+
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (1, 1, 1, 85);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (2, 2, 2, 90); 
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (3, 3, 3, 78);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (4, 4, 4, 88);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (5, 5, 5, 92);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (6, 9, 7, 81);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (7, 10, 8, 87);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (8, 11, 9, 93);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (9, 12, 10, 76);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (10, 13, 11, 89);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (11, 17, 13, 84);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (12, 18, 14, 79);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (13, 19, 15, 94);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (14, 20, 16, 88);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (15, 21, 17, 82);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (16, 25, 19, 86);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (17, 26, 20, 91);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (18, 27, 21, 89);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (19, 28, 22, 74);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (20, 29, 23, 96);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (21, 33, 25, 80);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (22, 34, 26, 92);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (23, 35, 27, 18);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (24, 36, 28, 85);
+INSERT INTO GRADE (GRADE_ID, Student_ID, Assignment_ID, Grade_Value) VALUES (25, 37, 29, 91);
