@@ -187,9 +187,7 @@ FOREIGN KEY (Student_ID) REFERENCES STUDENT(Student_ID)
 );
 
 ```
-Here are some few sample of the Tables created for futher information, I recommend you to check out  ("Table_name" Table Screenshot) 
-
-please do keep in mind to change the 'table_name' to your desired table.
+Here are some few sample of the Tables created for futher information, I recommend you to check out  phase 5 files attached
 
 ![alt text](Phase%205%20(Desc%20Tables%20SCREENSHOT).PNG)
 
