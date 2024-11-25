@@ -212,7 +212,7 @@ _**REMARK**_ : _Please check the  files provided in the repo  for the rest of sc
 
 They are many DML and DDL operations that can be than but we focus on mostly the "JOIN".
 
-We thought and got an idea of how to make a good use of joins outside the scope the other group would use and we thought we could use views and there are the code for views:
+We thought and got an idea of how to make a good use of joins outside, the scope the other group would use and we thought we could use _views_ and there are the code for views:
 
 ```sql
 CREATE VIEW StudentMarks AS
