@@ -269,7 +269,7 @@ COMMIT;
 <br>
 <br>
 
-# **Phase 7: Advanced Database Programming and Auditing**
+# **Phase 7:🗳️ Advanced Database Programming and Auditing**
 
 This phase focuses on implementing advanced PL/SQL techniques to enhance the **Course Management System (CMS)**. These features aim to ensure system efficiency, maintain data integrity, and establish robust auditing for improved functionality and security.
 
