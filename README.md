@@ -269,59 +269,229 @@ COMMIT;
 <br>
 <br>
 
-# THIS MARK THE CONCLUSION OF OUR PROJECT 
+# **Phase 7: Advanced Database Programming and Auditing**
+
+This phase focuses on implementing advanced PL/SQL techniques to enhance the **Course Management System (CMS)**. These features aim to ensure system efficiency, maintain data integrity, and establish robust auditing for improved functionality and security.
+
+
+## **Problem Statement**
+
+The CMS requires advanced programming techniques to address the following challenges:  
+1. Enforcing business rules and automating workflows using **triggers**.  
+2. Efficient row-by-row data processing with **cursors**.  
+3. Improving modularity and reusability with **packages**.  
+4. Monitoring and restricting access to sensitive data using **auditing mechanisms**.
+
+
+### **a) BEFORE Trigger**  
+This trigger enforces validation for attendance status before data is inserted into the `ATTENDANCE` table.
+
+CREATE OR REPLACE TRIGGER before_attendance_insert
+BEFORE INSERT ON ATTENDANCE
+FOR EACH ROW
+BEGIN
+  IF :NEW.Status NOT IN ('Present', 'Absent') THEN
+    RAISE_APPLICATION_ERROR(-20001, 'Invalid status. Must be Present or Absent.');
+  END IF;
+END;
+/
+
+### **b) Compound Trigger**  
+This trigger ensures assignment submission deadlines are respected. It also validates that the assignment ID exists.
+
+CREATE OR REPLACE TRIGGER submission_deadline
+BEFORE INSERT OR UPDATE ON SUBMISSION
+FOR EACH ROW
+DECLARE
+  due_date ASSIGNMENT.Due_Date%TYPE;
+BEGIN
+  SELECT Due_Date
+  INTO due_date
+  FROM ASSIGNMENT
+  WHERE Assignment_ID = :NEW.Assignment_ID;
+
+  IF :NEW.Submission_Date > due_date THEN
+    RAISE_APPLICATION_ERROR(-20002, 'Submission past the due date.');
+  END IF;
+EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    RAISE_APPLICATION_ERROR(-20003, 'Assignment ID not found.');
+END;
+/
+
+## **2. Cursor Usage**
+
+This implementation calculates the average grade for each student using explicit cursors.
+
+DECLARE
+  CURSOR student_grades IS
+    SELECT g.Student_ID, s.Name, AVG(g.Grade_Value) AS Avg_Grade
+    FROM GRADE g
+    JOIN STUDENT s ON g.Student_ID = s.Student_ID
+    GROUP BY g.Student_ID, s.Name;
+
+  v_student_id STUDENT.Student_ID%TYPE;
+  v_student_name STUDENT.Name%TYPE;
+  v_avg_grade NUMBER;
+BEGIN
+  OPEN student_grades;
+  LOOP
+    FETCH student_grades INTO v_student_id, v_student_name, v_avg_grade;
+    EXIT WHEN student_grades%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE('Student ID: ' || v_student_id || ' | Name: ' || v_student_name || ' | Average Grade: ' || v_avg_grade);
+  END LOOP;
+  CLOSE student_grades;
+END;
+/
+## **3. Attributes (%TYPE and %ROWTYPE)**
+
+This step demonstrates the use of `%TYPE` and `%ROWTYPE` to improve efficiency and reusability in PL/SQL code.
+
+DECLARE
+  v_student_rec STUDENT%ROWTYPE;
+BEGIN
+  SELECT * INTO v_student_rec FROM STUDENT WHERE Student_ID = 1;
+  DBMS_OUTPUT.PUT_LINE('Student Name: ' || v_student_rec.Name);
+END;
+/
+
+
+## **4. Package Development**
+
+### **a) Package Specification**  
+
+The package specification defines reusable procedures for logging audits and updating course capacities.
+
+CREATE OR REPLACE PACKAGE cms_package AS
+  PROCEDURE log_audit(p_table_name VARCHAR2, p_action_type VARCHAR2);
+  PROCEDURE update_course_capacity(p_course_id INT);
+END cms_package;
+/
+
+### **b) Package Body**  
+
+The package body implements the procedures defined in the specification.
+
+CREATE OR REPLACE PACKAGE BODY cms_package AS
+  PROCEDURE log_audit(p_table_name VARCHAR2, p_action_type VARCHAR2) IS
+  BEGIN
+    INSERT INTO AUDIT_LOG (Table_Name, Action_Type, Changed_By, Change_Date)
+    VALUES (p_table_name, p_action_type, USER, SYSDATE);
+  END log_audit;
+
+  PROCEDURE update_course_capacity(p_course_id INT) IS
+  BEGIN
+    UPDATE COURSE
+    SET Seats_Available = Seats_Available - 1
+    WHERE Course_ID = p_course_id;
+  END update_course_capacity;
+END cms_package;
+/
+
+## **5. Auditing and Restrictions**
+
+### **a) Auditing Example**  
+This trigger logs updates and deletions of sensitive student data into an audit log.
+
+CREATE OR REPLACE TRIGGER audit_sensitive_data
+AFTER UPDATE OR DELETE ON STUDENT
+FOR EACH ROW
+DECLARE
+  v_action_type VARCHAR2(10);
+BEGIN
+  IF DELETING THEN
+    v_action_type := 'DELETE';
+  ELSIF UPDATING THEN
+    v_action_type := 'UPDATE';
+  END IF;
+
+  INSERT INTO AUDIT_LOG (Table_Name, Action_Type, Changed_By, Change_Date)
+  VALUES ('STUDENT', v_action_type, USER, SYSDATE);
+END;
+/
+
+### **b) Restriction Example**  
+This procedure prevents unauthorized access to sensitive data based on the user's role.
+
+BEGIN
+  IF SYS_CONTEXT('USERENV', 'SESSION_USER') != 'ADMIN_ROLE' THEN
+    RAISE_APPLICATION_ERROR(-20003, 'Unauthorized access.');
+  END IF;
+END;
+/
+
+### **Scope**  
+- **Triggers**: Enforce data integrity and automate workflows.  
+- **Cursors**: Enable efficient row-by-row data processing.  
+- **Packages**: Group related procedures for better organization and reusability.  
+- **Auditing**: Improve security and accountability by logging changes to sensitive data.
+
+
+
+
+
+<br>
+<br>
+
+# **THIS MARKS THE CONCLUSION OF OUR PROJECT**
 
 # _**CREDITS**_ :
 
-_credit of this project goes to every member of the group that worked relentlessly and hard for this to happen :_
-
-
-
+_credit of this project goes to every member of the group that worked relentlessly and hard for this to happen:_
 
 1. **MUGISHA Julien**  
    - Business Process Modeling  
    - Lecturer Table Creation  
    - Repository Creation  
+   - Advanced Database Programming
 
 2. **IRADUKUNDA Delphine**  
    - Business Process Modeling  
    - Course Table Creation  
    - Repository Creation  
+   - Advanced Database Programming
 
 3. **SHEJA N M Yves**  
    - Logical Modeling  
    - Database Creation  
    - Transaction Operation Creation  
+   - Advanced Database Programming
 
 4. **ISHIMWE Mireille**  
    - Business Process Modeling  
    - Department Table Creation  
    - View Creation  
+   - Advanced Database Programming
 
 5. **INEZA HABAMENSHI Darryl**  
    - Logical Modeling  
    - Submission Table Creation  
    - View Creation  
+   - Advanced Database Programming
 
 6. **UWAYO Olga**  
    - Business Process Modeling  
    - Attendance Table Creation  
    - View Creation  
+   - Advanced Database Programming
 
 7. **KAMALI MUSASIRA Philbert**  
    - Logical Modeling  
    - Grade Table Creation  
    - Transaction Operation Creation  
+   - Advanced Database Programming
 
 8. **IRAKOZE Arlaine Peace**  
    - Logical Modeling  
    - Assignment Table Creation  
    - Repository Creation  
+   - Advanced Database Programming
 
 9. **ISHEMA NGABO Ange**  
    - Business Process Modeling  
    - Students Table Creation  
    - View Creation  
+   - Advanced Database Programming
 
 
 
