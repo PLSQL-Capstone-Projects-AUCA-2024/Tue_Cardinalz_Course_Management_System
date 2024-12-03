@@ -343,6 +343,9 @@ BEGIN
   CLOSE student_grades;
 END;
 /
+
+![WhatsApp Image 2024-12-03 at 07 44 14 (1)](https://github.com/user-attachments/assets/73437c9b-2ac3-4213-af43-faa369ebed75)
+
 ## **3. Attributes (%TYPE and %ROWTYPE)**
 
 This step demonstrates the use of `%TYPE` and `%ROWTYPE` to improve efficiency and reusability in PL/SQL code.
@@ -355,6 +358,7 @@ BEGIN
 END;
 /
 
+![WhatsApp Image 2024-12-03 at 07 44 15](https://github.com/user-attachments/assets/4400f577-35b3-4931-9efa-b6e269cb734f)
 
 ## **4. Package Development**
 
@@ -409,6 +413,7 @@ BEGIN
   VALUES ('STUDENT', v_action_type, USER, SYSDATE);
 END;
 /
+![WhatsApp Image 2024-12-03 at 07 44 14](https://github.com/user-attachments/assets/62417f21-80ea-4324-8d1d-08ad91dd82e0)
 
 ### **b) Restriction Example**  
 This procedure prevents unauthorized access to sensitive data based on the user's role.
